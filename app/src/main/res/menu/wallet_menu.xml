@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_icon"
+        android:icon="@drawable/menu_icon"
+        android:title="@string/add_or_load_wallet"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/new_wallet"
+                android:icon="@drawable/icon_new_wallet"
+                android:title="@string/new_wallet" />
+            <item
+                android:id="@+id/load_wallet"
+                android:icon="@drawable/icon_load_wallet"
+                android:title="@string/load_wallet" />
+
+            <item
+                android:id="@+id/refresh_wallet"
+                android:icon="@drawable/refresh_orange"
+                android:title="@string/refresh" />
+
+        </menu>
+    </item>
+</menu>

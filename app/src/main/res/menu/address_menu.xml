@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_icon"
+        android:icon="@drawable/menu_icon"
+        android:title="@string/add_address"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/new_address"
+                android:icon="@drawable/icon_new_wallet"
+                android:title="@string/new_address" />
+            <item
+                android:id="@+id/refresh_address"
+                android:icon="@drawable/refresh_orange"
+                android:title="@string/refresh" />
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24.0dip"
+            android:background="@color/darkerLightBackground"
+            android:gravity="center_horizontal"
+            android:padding="16.0dip"
+            android:text="@string/settings_heading"
+            android:textColor="#ff1e2227"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@color/transparentDarkBackground" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginStart="24.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:textColor="@color/darkText"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/backendVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginStart="24.0dip"
+                    android:textColor="@color/darkText"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/dbVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8.0dip"
+                    android:layout_marginStart="24.0dip"
+                    android:textColor="@color/darkText"
+                    android:textSize="12.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/transparentDarkBackground" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24.0dip"
+                    android:layout_marginStart="24.0dip">
+
+                    <TextView
+                        android:id="@+id/url_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="24.0dip"
+                        android:padding="8.0dip"
+                        android:text="@string/node_url"
+                        android:textColor="@color/darkText"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/url_text"
+                        style="@style/editTextWhiteBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/url_heading"
+                        android:layout_marginTop="4.0dip"
+                        android:background="@drawable/rounded_white_rect_with_border"
+                        android:hint="Http address"
+                        android:inputType="textUri"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="12.0dip" />
+
+                    <Button
+                        android:id="@+id/restore_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_below="@id/url_text"
+                        android:layout_marginBottom="4.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/button_inactive_gray"
+                        android:paddingEnd="8.0dip"
+                        android:paddingStart="8.0dip"
+                        android:text="@string/restore_default"
+                        android:textColor="@color/darkAlmostBlack" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:layout_marginTop="8.0dip"
+                    android:background="@color/transparentDarkBackground" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24.0dip"
+                    android:layout_marginStart="24.0dip"
+                    android:layout_marginTop="8.0dip">
+
+                    <Button
+                        android:id="@+id/pin_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50.0dip"
+                        android:layout_marginBottom="4.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:background="@drawable/sk_button"
+                        android:paddingEnd="24.0dip"
+                        android:paddingStart="24.0dip"
+                        android:text="@string/change_pin"
+                        android:textColor="@drawable/sk_button_text_color" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/cancel_button"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_inactive_gray"
+                android:text="@string/cancel"
+                android:textColor="@color/darkAlmostBlack" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sk_button"
+                android:text="@string/save"
+                android:textColor="@drawable/sk_button_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

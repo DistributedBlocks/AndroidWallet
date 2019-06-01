@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wallets_header_coin_gradient"
+    android:minHeight="?attr/actionBarSize">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@id/wallet_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/wallets_list_heading"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="24.0dip"
+                android:padding="4.0dip"
+                android:src="@drawable/settings" />
+
+        </RelativeLayout>
+
+
+        <!--<ImageView
+            android:id="@id/refresh_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24.0dip"
+            android:padding="8.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh" />-->
+
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="30dip">
+
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_mismatch_message"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/alert_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/alert_message"
+        android:layout_marginTop="30dip"
+        android:text="@string/pin_mismatch_tryagain"
+        android:textColor="@color/button_gradient_dark_brown"
+        android:textSize="15.0sp" />
+
+
+</RelativeLayout>

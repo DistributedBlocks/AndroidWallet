@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/rounded_top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/new_wallet_heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/header_rounded_top"
+        android:gravity="center_horizontal"
+        android:padding="16.0dip"
+        android:text="@string/wallet_heading_new"
+        android:textColor="#ff1e2227"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:background="@color/transparentDarkBackground" />
+
+    <TextView
+        android:id="@id/wallet_name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="16.0dip"
+        android:gravity="start"
+        android:text="@string/wallet_name_heading"
+        android:textColor="#ff1e2227"
+        android:textSize="12.0sp" />
+
+    <EditText
+        android:id="@id/wallet_name_text"
+        style="@style/editTextWhiteBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="Enter wallet_name name"
+        android:inputType="text"
+        android:lines="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="12.0dip" />
+
+    <TextView
+        android:id="@id/wallet_seed_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="start"
+        android:text="@string/wallet_seed_heading"
+        android:textColor="#ff1e2227"
+        android:textSize="14.0sp" />
+
+    <EditText
+        android:id="@id/wallet_seed_text"
+        style="@style/editTextWhiteBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="Enter wallet_name seed"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="5"
+        android:minLines="2"
+        android:padding="12.0dip" />
+
+    <TextView
+        android:id="@id/wallet_confirm_seed_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="start"
+        android:text="@string/wallet_seed_confirm"
+        android:textColor="#ff1e2227"
+        android:textSize="14.0sp" />
+
+    <EditText
+        android:id="@id/wallet_seed_confirm"
+        style="@style/editTextWhiteBox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_marginTop="4.0dip"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="Confirm wallet_name seed"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="5"
+        android:minLines="2"
+        android:padding="12.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_marginEnd="32.0dip"
+        android:layout_marginStart="32.0dip"
+        android:layout_weight="1.0"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/button_inactive_gray"
+                android:text="Cancel"
+                android:textColor="@color/darkAlmostBlack" />
+
+            <Button
+                android:id="@id/create_button"
+                android:layout_width="0.0dip"
+                android:layout_height="50.0dip"
+                android:layout_margin="8.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/sk_button"
+                android:enabled="false"
+                android:text="Create"
+                android:textColor="@drawable/sk_button_text_color" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

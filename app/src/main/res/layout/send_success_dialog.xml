@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dip">
+
+
+    <TextView
+        android:id="@+id/success_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_success"
+        android:textColor="@color/black"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/success_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_title"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/internet_alert_msg"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+    <TextView
+        android:id="@+id/copy_txid_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/success_msg"
+        android:layout_marginTop="30dip"
+        android:text="@string/copy_tx_to_clipboard"
+        android:textColor="@color/button_gradient_dark_brown"
+        android:textSize="15.0sp" />
+
+
+    <TextView
+        android:id="@+id/send_ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/success_msg"
+        android:layout_marginTop="30dip"
+        android:text="@string/ok"
+        android:textColor="@color/button_gradient_dark_brown"
+        android:textSize="15.0sp" />
+
+
+</RelativeLayout>

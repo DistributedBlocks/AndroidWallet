@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolar" />
+
+    <RelativeLayout
+        android:id="@+id/top_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/wallets_header_coin_gradient">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/splash_background"></ImageView>
+
+
+        <TextView
+            android:id="@+id/wallet_balance_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wallet_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="50.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wallet_balance_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/wallet_balance_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32.0dip"
+            android:layout_toEndOf="@id/wallet_balance_num"
+            android:text="HHC"
+            android:textColor="@color/white"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/wallet_balance_fiat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wallet_balance_num"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:textSize="12.0sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wallet_balance_fiat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16.0dip"
+            android:background="@drawable/fiat_background"
+            android:paddingBottom="2dp"
+            android:paddingLeft="@dimen/margin_5dp"
+            android:paddingRight="@dimen/margin_5dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/wallet_balance_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+
+
+            <TextView
+                android:id="@+id/hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5dp"
+                android:layout_toEndOf="@+id/wallet_balance_hours"
+                android:singleLine="true"
+                android:text="HHC Hours"
+                android:textColor="@color/white"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/seed_value_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/margin_5dp"
+            android:src="@drawable/eye_icon" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/address_list_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/wallet_action_buttons_view"
+        android:layout_below="@+id/top_container">
+
+        <include layout="@layout/address_list_fragment" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wallet_action_buttons_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16.0dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_wallet" />
+
+
+        <RelativeLayout
+            android:id="@+id/continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_active_blue"
+            android:paddingBottom="4dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send_icon" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/transaction_history_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_transactions_grey" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

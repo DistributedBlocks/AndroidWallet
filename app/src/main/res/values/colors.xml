@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#679cc6</color>
+    <color name="colorPrimaryDark">#468ea8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="almostWhiteTextTransparent">#80fafafa</color>
+    <color name="white">#ffffff</color>
+    <color name="darkAlmostBlack">#ff1e2227</color>
+    <color name="darkerLightBackground">#fff7f7f7</color>
+    <color name="lightGreyAlmostWhite">#fffbfbfb</color>
+    <color name="darkText">#ff1e2227</color>
+    <color name="transparentDarkBackground">#0d1e2227</color>
+    <color name="darkTextSemiTrans">#cc1e2227</color>
+    <color name="darkerBackgroundDivider">#fff0f0f0</color>
+    <color name="lightGreyText">#331e2227</color>
+    <color name="almostWhiteText">#fffafafa</color>
+    <color name="transparentWhite">#19ffffff</color>
+    <color name="darkGreyTransparent">#1af0f0f0</color>
+    <color name="reminder_red">#ffff004e</color>
+    <color name="fiatTextColor">#ff171a1d</color>
+    <color name="darkGreyText">#801e2227</color>
+    <color name="wallet_list_divider">#ffeff0f0</color>
+    <color name="black">#000000</color>
+
+    <color name="button_gradient_light_brown">#7468A0</color>
+    <color name="button_gradient_dark_brown">#AA728E</color>
+
+</resources>
